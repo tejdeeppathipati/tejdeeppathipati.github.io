@@ -98,44 +98,5 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <!-- SMTP.js Integration for sending email -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const form = document.getElementById('contactForm');
-            form.addEventListener('submit', function(e) {
-                e.preventDefault(); // Prevent default form submission
-                
-                // Collect form data
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const phone = document.getElementById('phone').value;
-                const message = document.getElementById('message').value;
-
-                // Sending email using smtpjs
-                Email.send({
-                    SecureToken: "cbd69086-6f34-40c3-843b-d3fb1b87e87e",  
-                    To: 'tejdeepp0909@gmail.com',
-                    From: email,  
-                    Subject: `New Contact Form Submission from ${name}`,
-                    Body: `
-                        Name: ${name} <br>
-                        Email: ${email} <br>
-                        Phone: ${phone} <br>
-                        Message: ${message} <br>
-                    `
-                }).then(
-                    message => {
-                        alert("Mail sent successfully");
-                        document.getElementById('submitSuccessMessage').classList.remove('d-none');
-                        form.reset();  // Reset the form after successful submission
-                    }
-                ).catch(
-                    error => {
-                        alert("Failed to send mail. Please try again later.");
-                        document.getElementById('submitErrorMessage').classList.remove('d-none');
-                    }
-                );
-            });
-        });
-    </script>
 </body>
 </html>
