@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Modern Dark Portfolio Theme */
+    --background: 225 9% 4%; /* #0B0B0C */
+    --foreground: 0 0% 95%; /* #F2F2F3 */
+
+    --card: 220 8% 11%; /* #1A1B1E */
+    --card-foreground: 0 0% 95%;
+
+    --popover: 225 9% 4%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 221 100% 59%; /* #2952FF - Accent Blue */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 220 9% 18%; /* #2A2B31 */
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 220 8% 11%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 221 100% 59%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 100% / 0.1; /* border-white/10 */
+    --input: 220 9% 18%;
+    --ring: 221 100% 59%;
+
+    --radius: 1rem;
+
+    /* Custom Portfolio Colors */
+    --brand-primary: 221 100% 59%; /* #2952FF */
+    --brand-gray-dark: 220 8% 11%; /* #1A1B1E */
+    --brand-gray-medium: 220 9% 18%; /* #2A2B31 */
+    
+    /* Gradient Definitions */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-primary)) 0%, hsl(var(--brand-primary) / 0.8) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(var(--brand-gray-dark)) 0%, hsl(var(--brand-gray-medium)) 100%);
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(var(--brand-primary) / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-jakarta antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Hero Button Variants */
+  .btn-hero-primary {
+    @apply bg-primary hover:bg-primary/90 text-primary-foreground;
+    @apply rounded-2xl px-8 py-4 font-semibold;
+    @apply transition-all duration-300;
+    @apply shadow-lg hover:shadow-[var(--shadow-glow)];
+    @apply transform hover:scale-105;
+  }
+  
+  .btn-hero-secondary {
+    @apply border border-white/20 bg-white/5 text-foreground;
+    @apply hover:bg-white/10 hover:border-white/30;
+    @apply rounded-2xl px-8 py-4 font-semibold;
+    @apply transition-all duration-300;
+    @apply backdrop-blur-sm;
+  }
+  
+  /* Card Styles */
+  .card-gradient {
+    background: var(--gradient-card);
+    @apply border border-white/10 rounded-2xl;
+    box-shadow: var(--shadow-card);
+  }
+  
+  /* Dot Animation */
+  .dot-float {
+    animation: dot-float 6s ease-in-out infinite;
+  }
+  
+  .dot-float-delayed {
+    animation: dot-float 6s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+
+@keyframes dot-float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(180deg); }
+}
+
+@keyframes dot-float-delayed {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(180deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+  
+  /* Typing Cursor */
+  .typed-cursor {
+    @apply text-primary animate-pulse;
+  }
+}
+
+@layer utilities {
+  /* Focus Ring */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background;
+  }
+  
+  /* Section Padding */
+  .section-padding {
+    @apply py-24 px-6 lg:px-8;
+  }
+  
+  /* Container */
+  .container-custom {
+    @apply mx-auto max-w-7xl;
+  }
+}
+
+/* Keyframes */
+@keyframes dot-float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-20px) translateX(5px);
+    opacity: 1;
+  }
+}

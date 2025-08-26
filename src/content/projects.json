@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Custom Transformer LLM",
+    "image": "/projects/transformer-diagram.png",
+    "stack": ["PyTorch", "Transformers", "Python", "Machine Learning"],
+    "links": {
+      "code": "https://github.com/tejdeeppathipati/mini-llm-transformer",
+      "readMore": "/projects/custom-transformer-llm"
+    },
+    "summary": "Implemented a Transformer from the paper level up—embedding layers, multi-head attention, encoder/decoder stacks, and a training loop with the right regularizers—so I could demystify how modern LLMs actually work. The project includes a clean data pipeline, labeled smoothing, early stopping, and search-time decoding to make results comparable across runs."
+  },
+  {
+    "title": "YouTube Data Analysis ELT Pipeline",
+    "image": "/projects/youtube-pipeline.png",
+    "stack": ["AWS", "Python", "ETL", "Data Engineering"],
+    "links": {
+      "code": "https://github.com/tejdeeppathipati/youtube-data-analysis",
+      "readMore": "/projects/youtube-data-analysis"
+    },
+    "summary": "Built an ELT workflow on AWS to pull trending video data at scale, normalize it into efficient columnar files, and expose it for ad-hoc analysis. The aim was to separate collection, transformation, and querying so each piece could scale independently and stay cheap. Dashboards on top highlight regional trends and engagement patterns."
+  },
+  {
+    "title": "Chest Cancer Classification",
+    "image": "/projects/chest-cancer-diagram.png",
+    "stack": ["TensorFlow", "CNN", "MLflow", "DVC", "Python"],
+    "links": {
+      "code": "https://github.com/tejdeeppathipati/chest-cancer-classification",
+      "readMore": "/projects/chest-cancer-classification"
+    },
+    "summary": "Created an end-to-end CNN pipeline for medical imaging—from dataset handling to experiment tracking—so model results are reproducible and comparable. The emphasis was on disciplined iteration: version the data, log the runs, and only change one thing at a time. This mindset made it possible to reason about improvements instead of guessing."
+  }
+]

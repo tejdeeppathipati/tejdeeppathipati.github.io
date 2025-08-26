@@ -1,0 +1,19 @@
+{
+  "name": "Tejdeep Pathipati",
+  "tagline": "Innovation · Design · Development",
+  "typedRoles": ["Software Engineer", "Data Engineer", "Data Scientist", "AI Engineer"],
+  "emailPublic": "tpathipa9@gmail.com",
+  "resumePdf": "/Tejdeep-Pathipati-Resume.pdf",
+  "cta": {
+    "primary": {"label": "View Resume", "href": "/resume"},
+    "secondary": {"label": "Browse Projects", "href": "/projects"},
+    "tertiary": {"label": "Read Blog", "href": "https://medium.com/@tejdeeppathipati", "external": true}
+  },
+  "profileImage": "/images/Image-Tejdeep.jpeg",
+  "profileImageAlt": "Tejdeep Pathipati headshot",
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/tejdeepp0909",
+    "github": "https://github.com/tejdeeppathipati",
+    "x": "https://x.com/"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "experience": [
+    {
+      "title": "Data Engineering Intern",
+      "company": "Wi-Tronix LLC",
+      "location": "Bolingbrook, IL",
+      "start": "May 2025",
+      "end": "Aug 2025",
+      "bullets": [
+        "Built a data curation tool and lakehouse workflows so teams could reliably work with tens of thousands of new images and their metadata every day without manual wrangling.",
+        "Organized storage and query layers on AWS (object storage + query engines + table formats) to make experiments reproducible instead of \"one-off\" scripts.",
+        "Instrumented the flows and dashboards so stakeholders could see health and trends at a glance, which also helped us cut repetitive ETL.",
+        "Integrated the pipeline with our ML tracking so models could be trained on consistent versions of the data and compared fairly."
+      ]
+    },
+    {
+      "title": "Undergraduate Teaching Assistant — Python",
+      "company": "George Mason University",
+      "location": "Fairfax, VA",
+      "start": "Aug 2024",
+      "end": "May 2025",
+      "bullets": [
+        "Ran weekly labs and live code-along sessions that turned abstract concepts—like data structures and OOP—into small, testable programs students could extend.",
+        "Focused on removing \"mystery\" from debugging by teaching a structured approach: isolate, verify, refactor.",
+        "Gave targeted feedback on projects to improve clarity, performance, and style, so students left with habits they could apply beyond the course.",
+        "Helped more students ship working code confidently and on time."
+      ]
+    },
+    {
+      "title": "Software Engineer Intern",
+      "company": "Rise Consultancy Edu",
+      "location": "Remote, India",
+      "start": "May 2024",
+      "end": "Aug 2024",
+      "bullets": [
+        "Designed and shipped backend features that real users touched every day, starting from clean API contracts and ending with observable, deployable services.",
+        "Tightened data access patterns and added caching so common requests were fast and predictable under load, not just on my laptop.",
+        "Built auth and rate-limiting around the APIs to protect the system as traffic grew.",
+        "Delivered a service that felt snappier to users and easier for the team to operate."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "George Mason University",
+      "location": "Fairfax, VA",
+      "degree": "B.S. in Computer Science",
+      "dates": "Expected May 2026",
+      "coursework": [
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming (Java)",
+        "Systems Programming",
+        "Operating Systems",
+        "Python",
+        "Calculus",
+        "Linear Algebra",
+        "Formal Methods and Models"
+      ]
+    }
+  ],
+  "skills": {
+    "Languages": [
+      "Python, SQL — primary tools for APIs, data wrangling, analytics, and ML",
+      "Java — OOP, data structures, backend fundamentals", 
+      "TypeScript/JavaScript — backend (Node) + supporting frontend work",
+      "Bash — quick automation and data/file ops",
+      "Familiar: C/C++ for systems & coursework"
+    ],
+    "Frameworks": [
+      "FastAPI, Node.js/Express — REST APIs, auth, caching, pagination",
+      "React/Next.js — clean UIs around data-heavy apps", 
+      "PyTorch, TensorFlow, scikit-learn — modeling (CNNs, Transformers, classic ML)",
+      "Pandas, NumPy — feature pipelines, analysis notebooks"
+    ],
+    "Cloud & Data": [
+      "AWS: S3, Lambda, Glue, Athena, EMR/EKS — batch ELT and query layers",
+      "Lakehouse / Tables: Apache Iceberg (PyIceberg), Parquet — partitioning & schema evolution",
+      "Containers & Orchestration: Docker, Kubernetes (EKS)",
+      "Databases: PostgreSQL — schema design, SQL tuning"
+    ],
+    "ML Ops & Experimentation": [
+      "MLflow, DVC, Comet ML — experiment tracking, artifact & data versioning",
+      "Evaluation discipline — accuracy/F1 for classifiers; BLEU/ROUGE-L for text tasks", 
+      "Reproducible training — deterministic seeds, clear configs, logged runs"
+    ],
+    "Practices": [
+      "API design · Data modeling · ETL/ELT pipelines · Idempotent jobs",
+      "Observability — logs, metrics, dashboards for debugging & performance",
+      "Testing & CI/CD — pytest/jest, GitHub Actions, code reviews, Git workflow",
+      "Security & Reliability basics — auth, rate-limits, least-privilege IAM"
+    ]
+  }
+}
