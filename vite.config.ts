@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/' : '/tejdeeppathipati.github.io/',
+  base: "/",
   build: {
     outDir: "docs",          
     emptyOutDir: true,
