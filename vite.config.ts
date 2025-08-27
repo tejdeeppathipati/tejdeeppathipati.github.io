@@ -4,9 +4,9 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/",
+  base: "/",                 // custom domain => keep "/"
   build: {
-    outDir: "docs",          
+    outDir: "dist",
     emptyOutDir: true,
   },
   server: { host: "::", port: 8080 },
