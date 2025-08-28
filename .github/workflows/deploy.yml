@@ -36,13 +36,13 @@ jobs:
       # Keep SPA refreshes working & set your custom domain
       - name: Add CNAME and 404 fallback
         run: |
-          echo tejdeeppathipati.com > dist/CNAME
-          cp dist/index.html dist/404.html
+          echo tejdeeppathipati.com > docs/CNAME
+          cp docs/index.html docs/404.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: docs
 
   deploy:
     needs: build
