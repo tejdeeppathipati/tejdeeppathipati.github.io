@@ -1,6 +1,6 @@
 # Tejdeep Pathipati - Personal Portfolio
 
-## 🛠️ Tech Stack
+# Tech Stack
 - **Frontend**: React 18, TypeScript
 - **Build Tool**: Vite
 - **Styling**: Tailwind CSS
@@ -8,6 +8,6 @@
 - **Animations**: Framer Motion
 - **Deployment**: GitHub Pages
 
-## 🌐 Live Site
+# Live Site
 - **GitHub Pages**: [https://tejdeeppathipati.github.io](https://tejdeeppathipati.github.io)
 - **Custom Domain**: [https://tejdeeppathipati.com](https://tejdeeppathipati.com)
